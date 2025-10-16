@@ -8,12 +8,6 @@
     font-family: Inter, "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
   }
 
-
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
   .lava-agent {
     width:100%;
     max-width:820px;
@@ -121,7 +115,7 @@
 
 
   @media (max-width:640px){
-    .lava-agent{ border-radius:12px; }
+    .lava-agent{ padding:14px; border-radius:12px; }
     .lava-header{ gap:10px; }
     .lava-logo{ width:44px; height:44px; flex:0 0 44px; }
     .lava-title{ font-size:16px; }
