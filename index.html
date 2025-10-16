@@ -8,35 +8,32 @@
 </head>
 <body>
 
-<div id="lava-agent" class="lava-agent" data-endpoint="" data-theme="">
+<div id="lava-agent" class="lava-agent" data-endpoint="">
   <div class="lava-header">
-    <div class="lava-logo">AI</div>
+    <div class="lava-logo" aria-hidden="true">AI</div>
     <div>
       <div class="lava-title">Агент конкурентного анализа</div>
-      <div class="lava-sub">Проверка релевантных роликов конкурентов — быстро</div>
+      <div class="lava-sub">Поиск релевантных роликов конкурентов — быстро</div>
     </div>
   </div>
 
   <div class="lava-body">
-    
     <div id="state-input" class="state active" aria-live="polite">
       <div class="lava-input-row">
-        <input id="lava-query" class="lava-input" type="text" placeholder="Введите тему или название канала" aria-label="Запрос"/>
+        <input id="lava-query" class="lava-input" type="text" placeholder="Введите тему или канал" aria-label="Запрос"/>
         <button id="lava-start" class="lava-btn">Анализ</button>
       </div>
-      <div class="hint">Работает с современными AI-агентами — ответ занимает несколько секунд.</div>
+      <div class="hint">Нажмите «Анализ» — поиск займёт несколько секунд.</div>
     </div>
 
-    
     <div id="state-loading" class="state" aria-live="polite">
       <div class="micro-loader" role="img" aria-hidden="true"></div>
-      <div class="muted">Идёт поиск и фильтрация — это займёт пару секунд.</div>
+      <div class="muted">Идёт поиск и фильтрация — немного терпения :)</div>
     </div>
 
-    
     <div id="state-results" class="state" aria-live="polite">
       <div id="results" class="results" role="region" aria-label="Результаты"></div>
-      <div style="display:flex; gap:8px; justify-content:center; margin-top:12px;">
+      <div class="small-actions">
         <button id="lava-new" class="lava-btn" style="background:#fff;color:var(--accent);border:1px solid rgba(111,140,255,0.12);">Новый запрос</button>
         <button id="lava-retry" class="lava-btn" style="background:transparent;color:var(--muted);border:1px solid rgba(0,0,0,0.04);">Повторить</button>
       </div>
@@ -44,6 +41,7 @@
     </div>
   </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
