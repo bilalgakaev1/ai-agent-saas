@@ -1,6 +1,6 @@
 window.LAVA_AGENT_CONFIG = {
   endpoint: "https://mxpkn8ns.ru/webhook/525c1d91-ca51-409b-9217-fc610f4318bb/chat", 
-  timeout: 240000, // ms
+  timeout: 360000, // ms
   labels: { start:"Анализ", placeholder:"Введите ссылку..." } 
 };
 
